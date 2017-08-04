@@ -1,0 +1,125 @@
+/*base styles*/
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+.container {
+  max-width: 960px;
+  display: flex;
+
+  margin: auto;
+}
+
+/*banner section*/
+.banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  padding-top: 1rem;
+  height: 30rem;
+  width: auto;
+  background-size: cover;
+}
+/*heading section with logo and menu selections*/
+.header {
+  padding: 1rem 1rem;
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/*logo block on left of header*/
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+/*menu on right of header*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu span {
+  margin-right: 1rem;
+}
+/*tagline in main banner*/
+.see {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  position: relative;
+  margin-left: auto;
+  top: 10rem;
+  right: -2rem;
+}
+.see h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*icon section showing product offerings*/
+.icons {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.icons .container {
+  justify-content: space-around;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+}
+#paper {
+  width: 3.5rem;
+  height: auto;
+}
+.icon img {
+  width: 5rem;
+  height: auto;
+}
+.icon span {
+  text-align: center;
+}
+
+/*section detailing company info and appointments*/
+.info {
+  padding-bottom: 5rem;
+}
+.title {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.philosophy,
+.appointments {
+  width: 35%;
+}
+.info .container {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  justify-content: space-around;
+}
+
+/*footer styling*/
+footer {
+  padding: 4rem;
+  background-color: azure;
+}
+footer img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+footer .container {
+  align-items: center;
+}
