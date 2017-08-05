@@ -45,6 +45,9 @@ html {
 .menu span {
   margin-right: 1rem;
 }
+#menu {
+  display: none;
+}
 /*tagline in main banner*/
 .see {
   padding: 1.5rem 5rem;
@@ -142,5 +145,71 @@ footer .container {
   .see h1 {
     font-size: 1.33rem;
     font-weight: bold;
+  }
+}
+
+/*media styling targeted at phone sizes*/
+@media (max-width: 768px) {
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  /*tagline in main banner section spans banner image*/
+  .see {
+    padding: 1rem 0;
+    width: 100%;
+    top: 9rem;
+    right: 0;
+    text-align: center;
+  }
+  .see h1 {
+    font-size: 1rem;
+  }
+  /*gets rid of company name and copyright in logo sections*/
+  .tortoise {
+    display: none;
+  }
+  .menu span {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
+  footer .container {
+    justify-content: center;
+  }
+  /*makes icons stack instaed of side by side and reduces text size*/
+  .icons {
+    padding: 3.77rem 0;
+  }
+  .icons .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    justify-content: space-around;
+  }
+  .icon span {
+    font-size: 0.77rem;
+  }
+  .info .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .philosophy,
+  .appointments {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    font-size: 0.77rem;
+    padding: 0 0.5rem;
+  }
+  .philosophy {
+    margin-bottom: 4rem;
   }
 }
