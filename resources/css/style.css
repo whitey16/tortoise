@@ -6,7 +6,6 @@ html {
 .container {
   max-width: 960px;
   display: flex;
-
   margin: auto;
 }
 
@@ -122,4 +121,26 @@ footer img {
 }
 footer .container {
   align-items: center;
+}
+
+/*media styling targeted at tablet sizes*/
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .see {
+    padding: 0.75rem 4rem;
+    position: relative;
+    margin-left: auto;
+    top: 5rem;
+    right: 2rem;
+  }
+  .see h1 {
+    font-size: 1.33rem;
+    font-weight: bold;
+  }
 }
